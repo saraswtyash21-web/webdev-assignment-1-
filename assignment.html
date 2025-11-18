@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Menu</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f3eee8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Grid layout */
+    .cont {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      width: 80%;
+      max-width: 1000px;
+    }
+
+    /* Each card */
+    .cont>div {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .cont>div:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Header line inside each card */
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #c49b63;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .cont {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cont {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cont">
+    <div>
+      <div class="top">
+        <span>Cappuccino</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Americano</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Espresso</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Macchiato</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Mocha</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Coffee Latte</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Piccolo Latte</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Ristretto</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div>
+      <div class="top">
+        <span>Affogato</span>
+        <span class="price">$49</span>
+      </div>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+  </div>
+</body>
+
+</html>
